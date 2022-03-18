@@ -214,8 +214,12 @@ void execute(uint32_t *prg,_Bool checkStackOverflowFlag) {
 			stack[stackIndex++]=globalVarArray[globalVarArrayIndex++];
 		}
 		break;
-	case TESTGT:
+	case TESTLTE:
 	case TESTLT:
+	case TESTGTE:
+	case TESTGT:
+	case TESTEQ:
+	case TESTNEQ:
 		switch (stack[stackPointer[stackPointerIndex]]) {
 		case APQ: //data at the top of the stack is an apq
 			switch (stack[stackPointer[stackPointerIndex-1]]) {
