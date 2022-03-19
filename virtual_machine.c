@@ -509,7 +509,7 @@ void execute(uint32_t *prg,_Bool checkStackOverflowFlag) {
 			break;
 		}
 		break;
-//	case POWER:
+//	case POWER: //commented out to reduce size
 //		switch (stack[stackPointer[stackPointerIndex]]) {
 //		case APQ: //data at the top of the stack is an apq
 //			switch (stack[stackPointer[stackPointerIndex-1]]) {
