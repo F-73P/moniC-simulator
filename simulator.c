@@ -26,7 +26,7 @@ double commandLineValue;
 double stackLevel1Value;
 double stackLevel2Value;
 
-char *stackValues[]={"3"}; //enter the values to be pushed onto the stack
+char *stackValues[]={"3"}; //enter the values to be pushed onto the stack, e.g. enter two values with char *stackValues[]={"3","sin(45)+2"} 
 uint8_t noOfStackValues=1; //enter the number of values to be pushed onto the stack 
 
 char prgString1[COMMANDLINELENGTH+9]="main(){";
