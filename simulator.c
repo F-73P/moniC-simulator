@@ -1,4 +1,6 @@
-//v1.00
+//MIT license
+
+//moniC simulator v1.00
 
 //includes
 
@@ -26,10 +28,10 @@ double commandLineValue;
 double stackLevel1Value;
 double stackLevel2Value;
 
-char *stackValues[]={"3"}; //enter the values to be pushed onto the stack, e.g. enter two values with char *stackValues[]={"3","sin(45)+2"} 
-uint8_t noOfStackValues=1; //enter the number of values to be pushed onto the stack 
+char *stackValues[]={"0.6","0.8","0.005"}; //enter the values to be pushed onto the stack
+uint8_t noOfStackValues=3; //enter the number of values to be pushed onto the stack 
 
-char prgString1[COMMANDLINELENGTH+9]="main(){";
+char prgString1[COMMANDLINELENGTH+9];
 char prgString2[2]=";}";
 
 //prototypes
@@ -75,11 +77,11 @@ int main(void) {
 		if(!get_compiler_error_flag()) {
 			virtual_machine(true);		
 		} 	
-	}		
+	}  	
 	
-	//select program "testSource" from moniC_programs.h	
-	set_source(testSource,testSourceLines);	
-
+	//select program "testSource" from moniC_programs.h		
+  set_source(testSource,1);	
+	
   //gen_sourceIndexArray(source); //in tools.c, used to generate sourceIndexArray, where sourceIndexArray[i] = source index at beginning
   //of program line i. Used for debugging parser	
 	
@@ -112,7 +114,7 @@ int main(void) {
 	}	
 
   //select program "testSource" from moniC_programs.h	 	
-	set_source(testSource,testSourceLines);	
+	set_source(testSource,1);
 
   //parse program "testSource"
 	moniC_parser(); 
