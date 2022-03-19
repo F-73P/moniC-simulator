@@ -23,7 +23,7 @@ char testSource[]= {
 };
 uint16_t testSourceLines = 11;
 
-//programs can also be entered by typing them in your favourite editor and converting to hex 
+//programs can also be entered by typing them in your favourite editor and converting to C hex array 
 //using the online tool https://tomeko.net/online_tools/ascii.php?lang=en 
 //e.g. for the program above:
 
