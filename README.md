@@ -1,2 +1,2 @@
 # moniC-simulator
-Files for Keil uVision5 
+Files to simulate the monic calculator C compiler using Keil uVision5 
